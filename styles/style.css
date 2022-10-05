@@ -1,0 +1,94 @@
+* {
+  border: 1px solid red;
+}
+
+.page {
+  width: 100%;
+  font-family: "PT Sans";
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  background-color: black;
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.header__title_premium {
+  padding-right: 5px;
+  font-weight: normal;
+}
+
+.header__title_car {
+  display: inline-grid;
+  align-items: center;
+  text-align: center;
+  min-width: 40px;
+  min-height: 23px;
+  background-color: #4a90e2;
+  text-transform: uppercase;
+}
+
+.header__links {
+  min-width: 368px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.header__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__search {
+  border: 0;
+  background: transparent;
+}
+
+.button__search_image {
+  width: 16px;
+  height: 16px;
+}
+
+.content {
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-top {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.card_type_top {
+  width: 375px;
+  height: 560px;
+}
+
+.card_type_main {
+  width: 400px;
+  height: 265px;
+}
