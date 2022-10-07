@@ -84,12 +84,25 @@
   flex-wrap: wrap;
 }
 
+.grid-main {
+  display: flex;
+  padding-top: 35px;
+  justify-content: space-between;
+}
+
+.grid-main__articles {
+  display: flex;
+  flex-direction: column;
+  width: 790px;
+  flex-wrap: wrap;
+}
+
 .card {
+  position: relative;
   width: 375px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
   padding-top: 30px;
 }
 
@@ -101,6 +114,17 @@
   height: 265px;
 }
 
+.card_type_article {
+  flex-direction: column;
+  align-items: center;
+  height: 560px;
+  padding-top: 30px;
+}
+
+.card_type_article:first-of-type {
+  margin-top: 0;
+}
+
 .card__content {
   display: flex;
   flex-direction: column-reverse;
@@ -109,8 +133,26 @@
   left: 16px;
 }
 
+.card__content_place_article {
+  top: 315px;
+  flex-direction: column;
+  width: 730px;
+  height: 249px;
+  background: #fff;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
 .card__image {
   width: 100%;
+  border-style: none;
+}
+
+.card__image_place_article {
+  width: 770px;
+  height: 440px;
+  object-fit: cover;
 }
 
 .card__title {
@@ -131,6 +173,15 @@
   line-height: 30px;
 }
 
+.card__title_place_article {
+  width: 614px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  margin: 72px 0 0 20px;
+  color: #171717;
+}
+
 .card__meta {
   margin: 0;
   font-size: 14px;
@@ -139,16 +190,43 @@
   color: white;
 }
 
+.card__meta_place_article {
+  color: #666666;
+  width: 614px;
+  font-style: italic;
+  color: #666;
+  margin: 15px 0 0 20px;
+}
+
 .card__badge {
   position: absolute;
   background-color: #4a90e2;
   margin: 0;
-  top: 60px;
-  left: 20px;
   color: white;
   padding: 4px 12px 4px 12px;
   border-radius: 3px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+.card__badge_place_top,
+.card__badge_place_main {
+  top: 60px;
+  left: 20px;
+}
+
+.card__badge_place_article {
+  top: 20px;
+  left: 20px;
+}
+
+.card__text {
+  width: 614px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  margin: 14px 0 30px 20px;
 }
