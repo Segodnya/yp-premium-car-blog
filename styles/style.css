@@ -87,13 +87,25 @@
 .grid-main {
   display: flex;
   padding-top: 35px;
+  padding-right: 120px;
   justify-content: space-between;
+}
+
+.grid-main {
+  padding-right: 0px;
 }
 
 .grid-main__articles {
   display: flex;
   flex-direction: column;
   width: 790px;
+  flex-wrap: wrap;
+}
+
+.grid-main__side-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   flex-wrap: wrap;
 }
 
@@ -125,6 +137,13 @@
   margin-top: 0;
 }
 
+.card_type_continue-reading {
+  flex-direction: column;
+  align-items: center;
+  max-height: 500px;
+  max-width: 300px;
+}
+
 .card__content {
   display: flex;
   flex-direction: column-reverse;
@@ -144,6 +163,17 @@
   z-index: 1;
 }
 
+.card__content_place_continue-reading {
+  top: 250px;
+  flex-direction: column;
+  max-width: 300px;
+  height: 249px;
+  background: #fff;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
 .card__image {
   width: 100%;
   border-style: none;
@@ -153,6 +183,13 @@
   width: 770px;
   height: 440px;
   object-fit: cover;
+}
+
+.card__image_place_continue-reading {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  align-self: center;
 }
 
 .card__title {
@@ -182,6 +219,12 @@
   color: #171717;
 }
 
+.card__title_place_continue-reading {
+  color: #171717;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
 .card__meta {
   margin: 0;
   font-size: 14px;
@@ -196,6 +239,12 @@
   font-style: italic;
   color: #666;
   margin: 15px 0 0 20px;
+}
+
+.card__meta_place_continue-reading {
+  color: #999;
+  font-size: 14px;
+  margin-top: 8px;
 }
 
 .card__badge {
@@ -229,4 +278,27 @@
   line-height: 24px;
   color: #666666;
   margin: 14px 0 30px 20px;
+}
+
+.card__text_type_continue-reading {
+  width: 270px;
+  max-height: 75px;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #666;
+  margin: 14px 0 21px 0px;
+}
+
+.card__button {
+  background: #232323;
+  border-radius: 5px;
+  width: 270px;
+  height: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
 }
