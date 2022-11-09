@@ -140,6 +140,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 30px;
+  z-index: -1;
 }
 
 .card_type_top {
@@ -174,6 +175,26 @@
   position: absolute;
   bottom: 16px;
   left: 16px;
+}
+
+.card__content_place_top {
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  bottom: 0;
+  left: 0;
+  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
+  background-color: red;
+}
+
+.card__content_place_main {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
+  background-color: red;
 }
 
 .card__content_place_article {
@@ -223,12 +244,16 @@
 }
 
 .card__title_place_top {
+  padding-bottom: 16px;
+  padding-left: 16px;
   width: 360px;
   font-size: 26px;
   line-height: 36px;
 }
 
 .card__title_place_main {
+  padding-bottom: 16px;
+  padding-left: 16px;
   width: 265px;
   font-size: 20px;
   line-height: 30px;
@@ -255,6 +280,16 @@
   line-height: 18px;
   font-weight: 400;
   color: white;
+}
+
+.card__meta_place_top {
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+.card__meta_place_main {
+  padding-bottom: 16px;
+  padding-left: 16px;
 }
 
 .card__meta_place_article {
@@ -371,7 +406,7 @@
   gap: 28px;
 }
 
-.popular__card{ 
+.popular__card {
   padding-top: 23px;
   position: relative;
   max-width: 300px;
@@ -485,6 +520,16 @@
   object-fit: contain;
 }
 
+.span-icon {
+  margin: 0 10px 0 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/social-ig.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .tags {
   display: flex;
   flex-direction: column;
@@ -503,25 +548,25 @@
   display: block;
   padding: 7px 17px;
   text-decoration: none;
-  background: #EBEBEB;
+  background: #ebebeb;
   border-radius: 3px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #171717; 
+  color: #171717;
 }
 
 .pre-footer {
   background-color: #171717;
   max-width: 100%;
   min-height: 500px;
-  padding: 0 100px;
+  padding: 60px 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 64px;
   column-gap: 110px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .newsletter {
@@ -581,9 +626,9 @@
 }
 
 .form-input_light {
-  color: #AEB3BB;
-  background: #FFFFFF;
-  border: 1px solid #E5E5E5;
+  color: #aeb3bb;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
 
@@ -614,23 +659,23 @@
 /* Bad Practice to Integrate It with CMS */
 
 .button__social:nth-of-type(1) {
-  background-image: url("../images/social-fb.png");
+  background-image: url("../images/social-fb.svg");
 }
 
 .button__social:nth-of-type(2) {
-  background-image: url("../images/social-tw.png");
+  background-image: url("../images/social-tw.svg");
 }
 
 .button__social:nth-of-type(3) {
-  background-image: url("../images/social-pn.png");
+  background-image: url("../images/social-pn.svg");
 }
 
 .button__social:nth-of-type(4) {
-  background-image: url("../images/social-g.png");
+  background-image: url("../images/social-g.svg");
 }
 
 .button__social:nth-of-type(5) {
-  background-image: url("../images/social-ig.png");
+  background-image: url("../images/social-ig.svg");
 }
 
 .pre-footer__posts {
@@ -674,4 +719,22 @@
   font-size: 14px;
   line-height: 14px;
   color: #cecece;
+}
+
+.card-gradient {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-5) 0%, rgba(0, 0, 0, 0.75) 82.82%);
+  z-index: 1;
+}
+
+.card-gradient_third {
+  height: 33%;
+}
+
+.card-gradient_half {
+  height: 50%;
 }
