@@ -3,6 +3,13 @@
   font-family: "PT Sans";
 }
 
+.link {
+  margin: 0;
+  text-decoration: none;
+  background-color: #000;
+  border: none;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -82,17 +89,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.button__search {
-  border: 0;
-  background: transparent;
-  /* Remove White Background ? */
-}
-
-.button__search_image {
-  width: 16px;
-  height: 16px;
 }
 
 .content {
@@ -183,8 +179,7 @@
   height: 33%;
   bottom: 0;
   left: 0;
-  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
-  background-color: red;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
 }
 
 .card__content_place_main {
@@ -193,8 +188,7 @@
   height: 50%;
   bottom: 0;
   left: 0;
-  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
-  background-color: red;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.75) 82.82%);
 }
 
 .card__content_place_article {
@@ -222,6 +216,14 @@
 .card__image {
   width: 100%;
   border-style: none;
+}
+
+.card__image_place_top {
+  height: 100%;
+}
+
+.card__image_place_main {
+  height: 100%;
 }
 
 .card__image_place_article {
